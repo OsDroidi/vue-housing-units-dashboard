@@ -1,32 +1,82 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <router-view />
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+body {
+  font-family: "ROboto", sans-serif;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+h2 {
+  font-weight: 800 !important;
+  margin-bottom: 0px !important;
+  font-size: 25px !important;
+  line-height: 30px !important;
+  letter-spacing: normal !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  color: rgb(72, 72, 72) !important;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+figure {
+  /*   width:30%; */
+  position: relative;
+  padding: 5px;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+figcaption.inside {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+figcaption.inside-populer {
+  position: absolute;
+  top: 10px;
+  left: 70%;
+}
+
+figcaption.inside {
+  color: white;
+}
+
+span {
+  display: block;
+}
+
+.text-desc {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  color: rgb(72, 72, 72) !important;
+  font-weight: normal !important;
+  margin-top: 0px !important;
+}
+
+.text-color {
+  color: gray !important;
+  font-size: 12px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.text-back {
+  color: black !important;
 }
 </style>
